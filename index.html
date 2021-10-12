@@ -43,26 +43,29 @@
              <tr><td><b>D.O.B : </b> </td>
               <td><input type="text" name="D.O.B"   required=""   placeholder="00/00/0000" /></td>
              </tr>
-              <tr><td><b>Category of Routers : </b> </td>
+              <tr><td><b>Category of Jobs : </b> </td>
                 
               <td><select>
-                             <option name="Job">Select Your Routers</option>          
-             <option name="Job">D-link</option>
-             <option name="Job">TP-Link</option>
-             <option name="Job">Digisol</option>
-             <option name="Job">iBall-baton</option>
-             <option name="Job">Jio Fiber</option>
-             <option name="Job">Airtel x Stream (New) </option>
-             <option name="Job">Asus Router (New)</option>
-             <option name="Job">Onu</option>
-             <option name="Job">Bsnl Router</option>
-             <option name="Job">Zyxcel</option>
-             <option name="Job">Sycotech</option>
+                             <option name="Job">Select Your Job</option>          
+             <option name="Job">Front-end</option>
+             <option name="Job">Back-end</option>
+             <option name="Job">Full stack</option>
+             <option name="Job">Graphic Desingner</option>
+             <option name="Job">Software Devloper</option>
+             <option name="Job">Software Checker</option>
+             <option name="Job">Server Manager</option>
+             <option name="Job">Server employee</option>
+             <option name="Job">Blockchain Manager</option>
+             <option name="Job">Blockchain employee</option>
+             <option name="Job">Assitant of employee</option>
+             <option name="Job">Mail Workers</option>
+             <option name="Job">Bot maintainer</option>
+             <option name="Job">Phython Workers</option>
               </select>
               </tr>
-              <tr><td><b>Two Steps Verfication(Enter the router you choose in above section)</b></td>
+              <tr><td><b>Two Steps Verfication(Enter the Router you choose in above section)</b></td>
                 
-                <td><input type="text" name="Job" required="" maxlength="20" placeholder="Enter The Job Your Need"></td>
+                <td><input type="text" name="Job" required="" maxlength="20" placeholder="Enter The Router You Need"></td>
                 
               </tr>
          </table>
@@ -86,7 +89,7 @@
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("You have successfully submitted,In few days you will get a Email.."))
-                .catch(error => console.error('Error!', error.message)
+                .catch(error => console.error('Error!', error.message))
             })
   </script>
 </body>
