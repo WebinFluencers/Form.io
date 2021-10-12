@@ -81,12 +81,12 @@
 
 	  const scriptURL = 'https://script.google.com/macros/s/AKfycbylqiJnAop0GjmlkGUbIbi4nz-SOgLA0540JA0jcc_Tk-Rb6WszHznl1vDepjLmy9FusA/exec'
             const form = document.forms['google-sheet']
-          <!---i--->
+          
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("You have successfully submitted,In few days you will get a Email.."))
-                .catch(error => console.error('Error!', error.message)}
+                .catch(error => console.error('Error!', error.message)
             })
   </script>
 </body>
